@@ -1,0 +1,66 @@
+openapi: 3.0.1
+info:
+  title: Sample API
+  description: Count words
+  version: 1.0.0
+servers:
+- url: http://localhost:3000/
+
+paths:
+  /word-count:
+    post:
+      summary: search for a word
+      requestBody:
+        description:
+        content:
+          application/json:
+            schema:
+              $ref: '#/definitions/wordcount/query'
+        required: true
+      responses:
+        200:
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/definitions/wordcount/response'
+        500:
+          description: unsuccessful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/definitions/error'
+
+definitions:
+  error:
+    type: object
+    properties:
+      code:
+        type: integer
+        example: 500
+      message:
+        type: string
+        example: "Error: Invalid protocol"
+      method:
+        type: string
+        example: GET
+      page:
+        type: string
+        example: "/word-count"
+  wordcount:
+    query:
+      type: object
+      properties:
+        keyword:
+          type: string
+          example: "fit"
+        url:
+          type: string
+          example: "https://www.virtusize.com/site/"
+    response:
+      type: object
+      properties:
+        data:
+          count:
+            type: integer
+            example: 12
