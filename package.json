@@ -7,9 +7,7 @@
   "scripts": {
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
     "start": "NODE_ENV=development nodemon",
-    "docker-stop-containers": "docker stop $(docker ps -a -q)",
-    "docker-clean-containers": "docker rm $(docker ps -a -q)",
-    "docker-clean-images": "docker rmi $(docker images -q)"
+    "test": "jest test"
   },
   "dependencies": {
     "express": "^4.16.4",
