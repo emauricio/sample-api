@@ -5,7 +5,6 @@ export function countWords(text: string, keyword: string ): number {
     const matches = text.match(new RegExp(regex, 'gim'));
 
     if (matches) {
-        // save to DB
         return matches.length;
     }
 
