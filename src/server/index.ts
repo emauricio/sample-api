@@ -2,7 +2,7 @@ import Express from 'express';
 import * as Helmet from 'helmet';
 import Morgan from 'morgan';
 
-import { wordcountRoute } from './components/wordcount/routes';
+import { wordCountRoute } from './components/wordcount/routes';
 import setupMongo from './db';
 import { indexRoute } from './routes';
 
@@ -37,7 +37,7 @@ class ServerApp {
     private routerConfig(): void {
         logger.debug('Initializing routes');
         this.app.use('/', indexRoute);
-        this.app.use('/api/word-count', wordcountRoute);
+        this.app.use('/api', wordCountRoute);
     }
 
     private errorConfig(): void {
