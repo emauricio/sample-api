@@ -10,9 +10,16 @@ services:
     image: dev-node
     depends_on:
       - mongo
+    links:
+      - mongo
     volumes:
       - ./src:/app/src
     command: yarn start
+    environment:
+      - MONGO_PATH=mongo:27017/sample
+      - WAIT_HOSTS=mongo:27017
+
+
   mongo:
     image: mongo:4.0
     ports:
@@ -26,11 +33,15 @@ services:
       - MONGO_INITDB_DATABASE=sample
     volumes:
       - ../mongo-data/db:/data/db
+
+
 #  swagger-editor:
 #    image: swaggerapi/swagger-editor:latest
 #    container_name: "swagger-editor"
 #    ports:
 #      - "8082:8080"
+
+
   swagger-ui:
     image: swaggerapi/swagger-ui:latest
     container_name: "swagger-ui"
