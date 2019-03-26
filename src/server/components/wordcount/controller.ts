@@ -1,6 +1,6 @@
 import * as requestp from 'request-promise-native';
 
-export function countWords(text: string = '', keyword: string = 'fit'): number {
+export function countWords(text: string, keyword: string ): number {
     const regex = `\\b${keyword}\\b`;
     const matches = text.match(new RegExp(regex, 'gim'));
 
@@ -25,15 +25,5 @@ export async function getHtmlFromUrl(url: string): Promise<string> {
         return await requestp.get(url, options);
     } catch (e) {
         throw new Error(`Unable to load content for: ${url}`);
-    }
-}
-
-export function validateUrl(url: string) {
-    try {
-        // tslint:disable-next-line
-        new URL(url);
-        return true;
-    } catch (e) {
-        return false;
     }
 }
