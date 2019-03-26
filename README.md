@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/emauricio/sample-api.svg?style=svg)](https://circleci.com/gh/emauricio/sample-api)
+[![CircleCI](https://circleci.com/gh/emauricio/sample-api.svg?style=svg&circle-token=f03add2f74d71360b83eba3c8b26af9638ecc1a8)](https://circleci.com/gh/emauricio/sample-api)
 
 # sample-api
 sample project using Node.js, TypeScript, Express.js, Swagger, Docker
