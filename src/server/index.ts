@@ -37,7 +37,7 @@ class ServerApp {
     private routerConfig(): void {
         logger.debug('Initializing routes');
         this.app.use('/', indexRoute);
-        this.app.use('/word-count', wordcountRoute);
+        this.app.use('/api/word-count', wordcountRoute);
     }
 
     private errorConfig(): void {

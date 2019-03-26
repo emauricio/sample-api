@@ -4,7 +4,7 @@ info:
   description: Count words
   version: 1.0.0
 servers:
-- url: http://localhost:3000/
+- url: http://localhost:3000/api/
 
 paths:
   /word-count:
@@ -61,6 +61,8 @@ definitions:
       type: object
       properties:
         data:
-          count:
-            type: integer
-            example: 12
+          type: object
+          properties:
+            count:
+              type: integer
+              example: 12

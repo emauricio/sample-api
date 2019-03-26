@@ -13,7 +13,7 @@ wordcountRoute.post('/', async (req, res, next) => {
         const html = await getHtmlFromUrl(url);
         const count = countWords(html, keyword);
 
-        res.json({ count });
+        res.json({data: { count }});
     } catch (e) {
         next(e);
     }
