@@ -7,7 +7,11 @@ sample project using Node.js, TypeScript, Express.js, Swagger, Docker
   ```
   ➜ brew cask install docker
   ```
-
+  or 
+  ```
+  https://docs.docker.com/docker-for-mac/install/
+  https://docs.docker.com/install/
+  ```
 
 ### How to run 
 
