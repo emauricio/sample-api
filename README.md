@@ -4,6 +4,9 @@ sample project using Node.js, TypeScript, Express.js, Swagger, Docker
 
 ### Requirements
 - docker 
+  ```
+  ➜ brew cask install docker
+  ```
 
 
 ### How to run 
