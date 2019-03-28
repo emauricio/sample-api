@@ -14,7 +14,7 @@ services:
       - mongo
     volumes:
       - ./src:/app/src
-    command: yarn start
+    command: sh -c "/wait && yarn start"
     environment:
       - MONGO_PATH=mongo:27017/sample
       - WAIT_HOSTS=mongo:27017
