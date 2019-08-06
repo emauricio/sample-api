@@ -6,8 +6,7 @@
     ],
     "jsRules": {},
     "rules": {
-        "quotemark": [false, "single", "avoid-escape"],
-        "max-line-length": [true, 120]
+        "quotemark": [false, "single", "avoid-escape"]
     },
     "rulesDirectory": []
 }
