@@ -1,36 +1,34 @@
-# sample-api 
+# Sample API
+
 [![CircleCI](https://circleci.com/gh/emauricio/sample-api.svg?style=svg&circle-token=f03add2f74d71360b83eba3c8b26af9638ecc1a8)](https://circleci.com/gh/emauricio/sample-api) :satisfied:
 
 sample project using Node.js, TypeScript, Express.js, Swagger, Docker
 
-### Requirements
+## Requirements
 
-- docker 
-  ```sh
-    brew cask install docker
-  ```
-  or 
-  ```text
-  https://docs.docker.com/docker-for-mac/install/
-  https://docs.docker.com/install/
-  ```
+docker
 
-### How to run 
-
+```sh
+brew cask install docker
 ```
+
+## How to run
+
+```text
 docker-compose up
 ```
 
-then you can access to 
+then you can access to
 
-- http://localhost:3000/  (node)
-- http://localhost:8081/  (swagger-ui)
+- (node) <http://localhost:3000/>
+- (swagger-ui) <http://localhost:8081/>
 
-### NOTE
+## NOTE
 
-> the db will be stored one level up from the clone directory `../mongo-data/db`
-> change the docker-compose.yaml if other location is desired
-> ```text
->    volumes:
->      - ../mongo-data/db:/data/db
-> ```
+ the db will be stored one level up from the clone directory `../mongo-data/db`
+ change the docker-compose.yaml if other location is desired
+
+ ```text
+    volumes:
+      - ../mongo-data/db:/data/db
+ ```
