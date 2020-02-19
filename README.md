@@ -4,11 +4,11 @@ sample project using Node.js, TypeScript, Express.js, Swagger, Docker
 
 ### Requirements
 - docker 
-  ```
-  ➜ brew cask install docker
+  ```sh
+    brew cask install docker
   ```
   or 
-  ```
+  ```text
   https://docs.docker.com/docker-for-mac/install/
   https://docs.docker.com/install/
   ```
@@ -27,7 +27,7 @@ then you can access to
 ### NOTE: 
 > the db will be stored one level up from the clone directory `../mongo-data/db`
 > change the docker-compose.yaml if other location is desired
-> ```
+> ```text
 >    volumes:
 >      - ../mongo-data/db:/data/db
 > ```
