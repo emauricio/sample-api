@@ -1,5 +1,6 @@
 # Sample API
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2c469c487e914684b546b9c49573aa04)](https://app.codacy.com/manual/efren.mauricio/sample-api?utm_source=github.com&utm_medium=referral&utm_content=emauricio/sample-api&utm_campaign=Badge_Grade_Settings)
 [![CircleCI](https://circleci.com/gh/emauricio/sample-api.svg?style=svg&circle-token=f03add2f74d71360b83eba3c8b26af9638ecc1a8)](https://circleci.com/gh/emauricio/sample-api) :satisfied:
 
 sample project using Node.js, TypeScript, Express.js, Swagger, Docker
