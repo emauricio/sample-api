@@ -26,7 +26,7 @@ then you can access to
 - http://localhost:3000/  (node)
 - http://localhost:8081/  (swagger-ui)
 
-### NOTE'
+### NOTE
 
 > the db will be stored one level up from the clone directory `../mongo-data/db`
 > change the docker-compose.yaml if other location is desired
