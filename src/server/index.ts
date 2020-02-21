@@ -15,6 +15,19 @@ class ServerApp {
     constructor() {
         logger.debug('Starting constructor');
         this.app = Express();
+        
+        if(true) {
+            if(1===1) {
+                
+                if(1===1) {
+                    if(1===1) {
+                        if(1===1) {
+                            console.log('log');
+                        }
+                    }
+                }
+            }
+        }
     }
 
     public initServer(): void {
