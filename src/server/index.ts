@@ -22,7 +22,7 @@ class ServerApp {
                 if(1===1) {
                     if(1===1) {
                         if(1===1) {
-                            console.log('log');
+                            console.log('meep');
                         }
                     }
                 }
